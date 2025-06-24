@@ -3,6 +3,7 @@ from config import BASE_DIR
 from file_manager import *
 from ftp_manager import backup_to_ftp
 from network_tools import scan_ports
+from init_structure import creer_structure_base
 
 # Utilisateurs simulés
 users = {
@@ -68,6 +69,8 @@ def verifier_droit(role, action):
     return roles.get(role, {}).get(action, False)
 
 def main():
+    creer_structure_base()  # Crée la structure de base si elle n'existe pas
+    print("Bienvenue dans le gestionnaire de fichiers !")
     role, username = authentifier()
     if not role:
         print("Fin du programme.")
