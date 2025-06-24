@@ -1,0 +1,26 @@
+2025-06-19 23:09:23,270 - Liste de C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech : []
+2025-06-19 23:09:44,985 - Fichier ajouté : C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\nani
+2025-06-19 23:09:48,009 - Liste de C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech : ['nani']
+2025-06-19 23:10:00,128 - Dossier ajouté : C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\fifi
+2025-06-19 23:10:04,682 - Liste de C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech : ['fifi', 'nani']
+2025-06-19 23:10:16,727 - Erreur : C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\lopm introuvable
+2025-06-24 01:51:37,767 - Liste de C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech : ['fifi', 'nani']
+2025-06-24 01:51:52,958 - Erreur : C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\de n'existe pas
+2025-06-24 01:52:15,766 - Changement de répertoire : C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\fifi
+2025-06-24 01:52:35,119 - Erreur : C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\fifi\New_Tech n'existe pas
+2025-06-24 19:17:19,517 - Liste de C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech : ['fifi', 'nani']
+2025-06-24 19:24:13,610 - Changement de répertoire : C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\Paris
+2025-06-24 19:24:18,186 - Liste de C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\Paris : ['Client1', 'Client2']
+2025-06-24 19:24:43,690 - Fichier ajouté : C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\Paris\audit1.txt
+2025-06-24 19:24:49,092 - Liste de C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\Paris : ['audit1.txt', 'Client1', 'Client2']
+2025-06-24 19:25:13,664 - Déplacé C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\Paris\audit1.txt vers C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\Paris\Client1
+2025-06-24 19:31:44,791 - Changement de répertoire : C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\Paris
+2025-06-24 20:03:46,198 - Backup FTP : C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\audit22.txt vers Paris/Client1
+2025-06-24 20:04:13,976 - Changement de répertoire : C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\Paris
+2025-06-24 20:04:21,460 - Changement de répertoire : C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\Paris\Client1
+2025-06-24 20:04:37,726 - Backup FTP : C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\Paris\Client1\audit1.txt vers Grenoble/Client2
+2025-06-24 20:53:06,023 - Liste de C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech : ['audit.txt', 'Grenoble', 'Marseille', 'Paris', 'Rennes']
+2025-06-24 20:53:14,982 - Changement de répertoire : C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\Rennes
+2025-06-24 20:53:19,022 - Liste de C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\Rennes : ['Client1', 'Client2']
+2025-06-24 20:55:05,422 - Copié C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\audit.txt vers C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\Rennes
+2025-06-24 20:55:38,028 - Copié C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\audit.txt vers C:\Users\sonia\Desktop\3A\SRC\S2\Python\Soutenance\New_Tech\Rennes/Client2
