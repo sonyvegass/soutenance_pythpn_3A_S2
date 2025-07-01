@@ -173,8 +173,30 @@ def main():
         elif choice == "9":
             if verifier_droit(role, "scanner_ports"):
                 ip = input("IP à scanner : ")
-                ports = range(20, 1025)
-                scan_ports(ip, ports)
+
+                print("Choisissez une option :")
+                print("1. Scanner un port spécifique")
+                print("2. Scanner une plage de ports (ex: 1000-2000)")
+                print("3. Scanner tous les ports (1 à 65535)")
+
+                scan_choice = input("Option : ")
+
+                if scan_choice == "1":
+                    port = int(input("Numéro du port : "))
+                    scan_ports(ip, [port])  # liste avec un seul port
+
+                elif scan_choice == "2":
+                    start = int(input("Port de début : "))
+                    end = int(input("Port de fin : "))
+                    scan_ports(ip, range(start, end + 1))
+
+                elif scan_choice == "3":
+                    print("⚠️ Cela peut prendre du temps, surtout sans filtrage.")
+                    scan_ports(ip, range(1, 65536))
+
+                else:
+                    print("Choix invalide pour le scan.")
+                print("Scan terminé.")
             else:
                 print("Accès refusé : permission refusée pour scanner les ports.")
 

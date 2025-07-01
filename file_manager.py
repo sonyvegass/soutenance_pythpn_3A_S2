@@ -52,12 +52,21 @@ def move_item(src, dst):
     shutil.move(src, dst)
     log(f"Déplacé {src} vers {dst}")
 
+
 def delete_item(path):
     try:
+        confirm = input(f"⚠️ Êtes-vous sûr de vouloir supprimer '{path}' ? (oui/non) : ").strip().lower()
+        if confirm != "oui":
+            print("❌ Suppression annulée.")
+            return
+        
         if os.path.isdir(path):
             shutil.rmtree(path)
         else:
             os.remove(path)
+        
         log(f"Supprimé : {path}")
+        print(f"✅ Supprimé : {path}")
     except Exception as e:
         log(f"Erreur suppression {path} : {e}")
+        print(f"❌ Erreur lors de la suppression : {e}")

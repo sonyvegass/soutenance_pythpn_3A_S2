@@ -1,15 +1,25 @@
 from ftplib import FTP, error_perm
 import os
-from config import BASE_DIR, FTP_HOST, FTP_USER, FTP_PASS, FTP_BACKUP_DIR
+from config import BASE_DIR, FTP_HOST, ftp_credentials, ftp_backup_dir
 from logger import log
 
 def backup_to_ftp(local_path, region, client):
+    creds = ftp_credentials.get(region)
+    if not creds:
+        print(f"❌ Aucun identifiant FTP défini pour la région : {region}")
+        return
+    
+    base_backup_dir = ftp_backup_dir.get(region)
+    if not base_backup_dir:
+        print(f"❌ Aucun chemin FTP défini pour la région : {region}")
+        return
+
     rel_path = os.path.relpath(local_path, BASE_DIR)
     ftp = FTP(FTP_HOST)
-    ftp.login(user=FTP_USER, passwd=FTP_PASS)
+    ftp.login(user=creds["user"], passwd=creds["pass"])
 
-    # Navigue dans le bon répertoire
-    for folder in [FTP_BACKUP_DIR, region, client]:
+    # Navigation dans FTP (ex: /ftp/grenoble/client)
+    for folder in [base_backup_dir, client]:
         try:
             ftp.cwd(folder)
         except error_perm:
